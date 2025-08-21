@@ -1,0 +1,115 @@
+section {
+    width: 1170px;
+    background-color: rgb(247, 247, 247);
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    padding: 65px 60px;
+    border-radius: 12px;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 35px;
+
+    img {
+        border-radius: 12px;
+    }
+}
+
+.owner {
+    display: flex;
+    padding-top: 10px;
+    position: relative;
+
+    img {
+        border-radius: 12px;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: -17px;
+
+    h1 {
+        font-size: 32px;
+        width: 300px;
+        padding-bottom: 10px;
+    }
+}
+
+.person {
+    p {
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        color: gray;
+    }
+}
+
+.back {
+    width: 100px;
+    height: 30px;
+    background-color: #007BFF;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.price {
+    padding-top: 25px;
+
+    p {
+        color: green;
+        font-weight: 500;
+    }
+}
+
+.basket {
+    margin-top: -1px;
+}
+
+.skelets {
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 24px;
+    border: none;
+    width: fit-content;
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Mozilla Text', sans-serif;
+    position: relative;
+    color: white;
+    z-index: 1;
+}
+
+.skelets::after {
+    content: '';
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(120deg, blue, green, yellow, blueviolet, yellowgreen, blue);
+    background-size: 160% 160%;
+    border-radius: 24px;
+}
+
+.skelets::first-letter {
+    text-transform: uppercase;
+}
+
+.thumb.active {
+    opacity: 0.6;
+}

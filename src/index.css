@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mozilla Text', sans-serif;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
